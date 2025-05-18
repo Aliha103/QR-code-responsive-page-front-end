@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body { 
+      font-family: 'Outfit', sans-serif; 
+      background-color: hsl(212, 45%, 89%); 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      margin: 0;
+    }
+    .main_div{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+    .qr_code {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 16px;
+      color: hsl(219, 29%, 14%);
+      margin-bottom: 20px;
+    }
+    @media (max-width: 600px) {
+      .card {
+        padding: 15px;
+      }
+      .title {
+        font-size: 20px;
+      }
+      .description {
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 400px) {
+      .card {
+        padding: 10px;
+      }
+      .title {
+        font-size: 18px;
+      }
+      .description {
+        font-size: 12px;
+      }
+    }
+    @media (max-width: 300px) {
+      .card {
+        padding: 5px;
+      }
+      .title {
+        font-size: 16px;
+      }
+      .description {
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="main_div">
+  <div class="card">
+    <img src="./images/image-qr-code.png" alt="QR code centered on a blue background with subtle circular patterns, designed for scanning to access a website, no visible text in the QR code, overall tone is modern and inviting" class="qr_code">
+    <h1 class="title">Improve your front-end skills by building projects</h1>
+    <p class="description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Ali Hassan Cheema</a>.</p>
+  </div>
+</div>
+ 
+</body>
+</html>
